@@ -1,0 +1,28 @@
+---
+# tasks file for ansible-role-nvidia-container-runtime
+
+- name: Add NVIDIA apt key
+  apt_key:
+    url: https://nvidia.github.io/nvidia-docker/gpgkey
+    state: present
+
+- name: Fetch NVIDIA apt repository list
+  get_url:
+    url: https://nvidia.github.io/nvidia-docker/{{ distribution }}/nvidia-docker.list
+    dest: /etc/apt/sources.list.d/nvidia-docker.list
+
+- name: Update apt caches and install nvidia-docker2
+  apt:
+    name: nvidia-docker2
+    state: present
+    update_cache: yes
+
+- name: Configure docker nvidia container runtime
+  copy:
+    src: files/daemon.json
+    dest: /etc/docker/daemon.json
+
+- name: Restart docker daemon
+  systemd:
+    name: docker
+    state: restarted

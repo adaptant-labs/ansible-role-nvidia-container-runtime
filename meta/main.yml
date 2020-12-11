@@ -1,0 +1,29 @@
+galaxy_info:
+  author: Paul Mundt (pmundt)
+  description: Setup and configure the NVIDIA container runtime
+  company: "Adaptant Solutions AG"
+  license: license (MIT, BSD)
+
+  min_ansible_version: 2.9
+
+  platforms:
+    - name: Debian
+      versions:
+        - buster
+        - stretch
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+        - disco
+        - eoan
+        - focal
+
+  galaxy_tags:
+    - system
+    - docker
+    - nvidia
+
+dependencies: []
+
+  
