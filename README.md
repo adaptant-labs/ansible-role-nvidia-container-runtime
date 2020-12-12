@@ -35,7 +35,7 @@ Including an example of how to use your role (for instance, with variables passe
 ```yaml
     - hosts: localhost
       roles:
-         - pmundt.nvidia-container-runtime
+         - adaptant.nvidia-container-runtime
 ```
 
 License
@@ -46,4 +46,4 @@ MIT / BSD
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Adaptant Labs ([labs@adaptant.io](mailto:labs@adaptant.io))
