@@ -1,6 +1,13 @@
 ---
 # tasks file for ansible-role-nvidia-container-runtime
 
+- name: Install apt dependencies
+  apt:
+    name:
+     - apt-transport-https
+     - ca-certificates
+     - gnupg2
+
 - name: Add NVIDIA apt key
   apt_key:
     url: https://nvidia.github.io/nvidia-docker/gpgkey
