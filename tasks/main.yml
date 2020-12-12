@@ -4,9 +4,9 @@
 - name: Install apt dependencies
   apt:
     name:
-     - apt-transport-https
-     - ca-certificates
-     - gnupg2
+      - apt-transport-https
+      - ca-certificates
+      - gnupg2
 
 - name: Add NVIDIA apt key
   apt_key:
