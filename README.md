@@ -35,7 +35,7 @@ Including an example of how to use your role (for instance, with variables passe
 ```yaml
     - hosts: localhost
       roles:
-         - adaptant.nvidia-container-runtime
+         - adaptant.nvidia_container_runtime
 ```
 
 License
