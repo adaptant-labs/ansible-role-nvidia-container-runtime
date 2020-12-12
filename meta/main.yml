@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: nvidia-container-runtime
   author: Paul Mundt (pmundt)
   description: Setup and configure the NVIDIA container runtime
   company: "Adaptant Solutions AG"
