@@ -1,6 +1,10 @@
 Ansible Role: NVIDIA Container Runtime
 =========
 
+[![Build Status](https://travis-ci.com/adaptant-labs/ansible-role-nvidia-container-runtime.svg?branch=master)](https://travis-ci.com/adaptant-labs/ansible-role-nvidia-container-runtime)
+![Ansible Role](https://img.shields.io/ansible/role/52310)
+![Ansible Role](https://img.shields.io/ansible/role/d/52310)
+
 An Ansible Role for installing and configuring the [NVIDIA Container Runtime][nvidia-container-runtime].
 
 [nvidia-container-runtime]: https://github.com/NVIDIA/nvidia-docker
