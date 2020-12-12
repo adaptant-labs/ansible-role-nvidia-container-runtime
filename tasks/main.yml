@@ -29,8 +29,5 @@
     src: files/daemon.json
     dest: /etc/docker/daemon.json
     mode: 0644
-
-- name: Restart docker daemon
-  systemd:
-    name: docker
-    state: restarted
+  notify:
+    - Restart docker daemon
